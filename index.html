@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <title>IDM Code Test - Nikos Tsourtis</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://use.typekit.net/cni2vqe.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>
+        function toggle() {
+                this.state = !this.state; 
+                if(this.state) {
+                    open();
+                } else {
+                    close();
+                }
+            }
+            //get id's name 
+            var theId = '';
+            function nameID(clickedElement) {
+            theId = clickedElement.id;
+           }
+
+            //show status of the toggle in console log
+            function open() {
+                console.log(theId+" is on");
+            }
+
+            function close() {
+                console.log(theId+" is off");
+            }
+    </script>
+  </head>
+  <body>
+      <div class="wrapper">
+          <div class="header">
+              <h1>Panel Header</h1>
+          </div>
+          <div class="row">
+             <h2>Subheader Option</h2>
+             <p>Description below subheader</p>
+             <div class="switch-wraper" >
+               <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switchNo1" onclick="nameID(this);toggle.call(this);">
+                    <label class="onoffswitch-label" for="switchNo1"></label>
+                </div>
+             </div>
+          </div>
+          <div class="row">
+             <h2>Subheader Option</h2>
+             <p>Description below subheader</p>
+             <div class="switch-wraper" >
+               <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch-No-2" onclick="nameID(this);toggle.call(this);">
+                    <label class="onoffswitch-label" for="switch-No-2"></label>
+                </div>
+             </div>
+          </div>
+          <div class="row">
+             <h2>Subheader Option</h2>
+             <p>Description below subheader</p>
+             <div class="switch-wraper" >
+               <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch-No-3" onclick="nameID(this);toggle.call(this);">
+                    <label class="onoffswitch-label" for="switch-No-3"></label>
+                </div>
+             </div>
+          </div>
+          <div class="row">
+             <h2>Subheader Option</h2>
+             <p>Description below subheader</p>
+             <div class="switch-wraper" >
+               <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch-No-4" onclick="nameID(this);toggle.call(this);">
+                    <label class="onoffswitch-label" for="switch-No-4"></label>
+                </div>
+             </div>
+          </div>
+          <div class="row">
+             <h2>Subheader Option</h2>
+             <p>Description below subheader</p>
+             <div class="switch-wraper" >
+               <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch-No-5" onclick="nameID(this);toggle.call(this);">
+                    <label class="onoffswitch-label" for="switch-No-5"></label>
+                </div>
+             </div>
+          </div>
+          <div class="row">
+             <h2>Subheader Option</h2>
+             <p>Description below subheader</p>
+             <div class="switch-wraper" >
+               <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch-No-6" onclick="nameID(this);toggle.call(this);">
+                    <label class="onoffswitch-label" for="switch-No-6"></label>
+                </div>
+             </div>
+          </div>
+      </div>
+
+  </body>
+</html>

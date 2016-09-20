@@ -1,0 +1,74 @@
+body{
+    align-content: center;
+    color: #444444;
+    font-family: "acumin-pro",sans-serif;
+}
+h1{
+    font-size: 16px;
+    padding:10px;
+    font-weight:normal;
+}
+h2{
+    font-size: 12px;
+    padding:10px 10px 0px 10px;
+    font-weight:normal;
+}
+p{
+    font-size: 10px;
+    margin:-10px 10px 10px 10px;
+}
+.wrapper {
+    margin: auto;
+    background-color: #f2f2f2;
+    width:300px;
+}
+.header{
+    border-radius: 5px 5px 0px 0px;
+    border: 2px solid 20a1ce;
+    color: #ffffff;
+    height: 40px;
+    background-color: #20a1ce;
+}
+.row{
+    height: 60px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.onoffswitch {
+    position: relative; width: 30px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 10px; padding: 0; line-height: 10px;
+    border: 2px solid #afafaf; border-radius: 10px;
+    background-color: #AFAFAF;
+    transition: background-color 0.3s ease-in;
+}
+.onoffswitch-label:before {
+    content: "";
+    display: block; width: 10px; margin: 0px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 18px;
+    border: 2px solid #afafaf; border-radius: 10px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background-color: #20A1CE;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+   border-color: #20A1CE;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 0px; 
+}
+.switch-wraper{
+    float: right;
+    margin-top: -30px;
+    padding-right: 10px;
+
+}
